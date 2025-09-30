@@ -18,3 +18,8 @@ d-----         9/30/2025  11:33 AM                escrapbook
 
 
 PS C:\Users\volny\Documents\bakalarsky_projekt>
+
+
+chci davat do git ingnore konkretni cesty ke slozkam nebo k souborum
+pokud bych tam dal rekurzivni .jpg tak je problem ze se budou ignorovat i treba nejake moje demo ukazky
+ja nechci jen demo ukazky ktere jsem sam nebytvoril... zatim
