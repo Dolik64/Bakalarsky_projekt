@@ -1,0 +1,14 @@
+page_index,page_type,background_image,leaf_types
+0,text-thing,,
+1,grid-layout,,"imager, text-thing"
+2,ref-decorator,,imager
+3,grid-layout,,"imager, video-thing"
+4,ref-decorator,,imager
+5,grid-layout,,imager
+6,grid-layout,,"imager, text-thing"
+7,split-layout,,"imager, text-thing"
+8,split-layout,,"imager, text-thing"
+9,grid-layout,,"imager, text-thing"
+10,grid-layout,,imager
+11,split-layout,,"imager, text-thing"
+12,ref-decorator,,text-thing

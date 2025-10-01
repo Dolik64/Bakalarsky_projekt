@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <title>eScrapBook Playground – JSON editor + náhled</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- JSONEditor (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/jsoneditor@10.1.0/dist/jsoneditor.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/jsoneditor@10.1.0/dist/jsoneditor.min.js"></script>
+  <style>
+    :root {
+      --ui-gap: 12px;
+      --panel-bg: #f6f7f9;
+      --border: #d6d9df;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif;
+      background: #fff;
+      color: #222;
+      height: 100vh; display: grid;
+      grid-template-rows: auto 1fr;
+    }
+    header {
+      display: flex; gap: 8px; align-items: center;
+      padding: 10px var(--ui-gap); border-bottom: 1px solid var(--border);
+      background: #fff; position: sticky; top: 0; z-index: 50;
+    }
+    header .spacer { flex: 1; }
+    header button, header label {
+      padding: 8px 12px; border: 1px solid var(--border);
+      background: var(--panel-bg); border-radius: 10px; cursor: pointer;
+    }
+    header input[type=file] { display: none; }
+    main {
+      display: grid; gap: var(--ui-gap);
+      grid-template-columns: minmax(320px, 520px) 1fr;
+      padding: var(--ui-gap);
+      height: calc(100vh - 52px);
+    }
+    .panel {
+      border: 1px solid var(--border); border-radius: 14px; overflow: hidden;
+      background: #fff; display: flex; flex-direction: column; min-height: 0;
+    }
+    .panel header {
+      border-bottom: 1px solid var(--border); background: var(--panel-bg);
+      padding: 8px 12px; font-weight: 600;
+    }
+    .panel .content { flex: 1; min-height: 0; }
+    #editor { height: 100%; }
+    #viewer {
+      height: 100%; overflow: auto;
+      background: #eee; padding: 10px;
+    }
+    /* Stránky – plátna */
+    .page {
+      position: relative;
+      width: min(1200px, 100%);
+      aspect-ratio: 210 / 297; /* A4 portrait přibližně */
+      background: #fff;
+      margin: 10px auto;
+      border: 1px solid #ccd0d6; border-radius: 8px; overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,.06);
+    }
+    /* Dekorátory/layouty */
+    .background-decorator {
+      position: absolute; inset: 0;
+      background-repeat: no-repeat; background-position: center center; background-size: cover;
+    }
+    .inset {
+      position: absolute;
+      /* default inset 5% všude pokud není zadáno */
+      top: 5%; left: 5%; right: 5%; bottom: 5%;
+      display: grid; place-items: stretch;
+    }
+    .split-layout {
+      display: grid; gap: var(--ui-gap);
+      width: 100%; height: 100%;
+    }
+    .grid-layout {
+      display: grid; gap: var(--ui-gap);
+      width: 100%; height: 100%;
+    }
+    .imager, .video, .text-thing {
+      width: 100%; height: 100%;
+      display: grid; place-items: center; overflow: hidden; background: #fafafa;
+      border-radius: 6px;
+    }
+    .imager img { max-width: 100%; max-height: 100%; display: block; }
+    .video video { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .text-thing { padding: 10px; background: #fff; }
+    /* Pomocné */
+    .controls-row { display: flex; gap: 8px; align-items: center; }
+    .note { font-size: 12px; color: #666; margin-left: 6px; }
+  </style>
+</head>
+<body>
+  <header>
+    <label for="fileInput">Load JSON</label>
+    <input id="fileInput" type="file" accept=".json,application/json" />
+    <button id="btnRender">Render</button>
+    <button id="btnSave">Save JSON</button>
+    <span class="spacer"></span>
+    <span class="note">Tip: změň třeba <code>text-thing.options.font-family</code> a dej Render.</span>
+  </header>
+
+  <main>
+    <section class="panel">
+      <header>JSON Editor</header>
+      <div class="content" id="editor"></div>
+    </section>
+
+    <section class="panel">
+      <header>Náhled (render z JSONu)</header>
+      <div class="content" id="viewer"></div>
+    </section>
+  </main>
+
+  <script>
+    // ---------- JSON Editor setup ----------
+    const editorContainer = document.getElementById('editor');
+    const viewer = document.getElementById('viewer');
+    const fileInput = document.getElementById('fileInput');
+    const btnRender = document.getElementById('btnRender');
+    const btnSave = document.getElementById('btnSave');
+
+    const editor = new JSONEditor(editorContainer, {
+      mode: 'tree',
+      mainMenuBar: true,
+      navigationBar: true,
+      statusBar: true,
+      onError: (err) => alert(err.toString()),
+    });
+
+    // Volitelně: můžeš sem dát implicitní cestu, např. fetch('pretty.json')
+    // fetch('pretty.json').then(r => r.json()).then(setData).catch(()=>{});
+    // Pro jistotu nezačínáme fetchovat automaticky.
+
+    fileInput.addEventListener('change', async (e) => {
+      const file = e.target.files?.[0];
+      if (!file) return;
+      const text = await file.text();
+      try {
+        const json = JSON.parse(text);
+        setData(json);
+      } catch (e) {
+        alert('Soubor není validní JSON: ' + e.message);
+      }
+    });
+
+    function setData(json) {
+      editor.set(json);
+      // po načtení rovnou vyrenderuj
+      render();
+    }
+
+    btnRender.addEventListener('click', render);
+
+    btnSave.addEventListener('click', () => {
+      const data = editor.get();
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'book-edited.json';
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+
+    // ---------- Renderer ----------
+    function render() {
+      viewer.innerHTML = '';
+      const data = editor.get();
+      if (!data || data.type !== 'book') {
+        viewer.innerHTML = `<div style="padding:12px;color:#666">
+          Očekávám kořen <code>{ type: "book", slots: [...] }</code>. Načti prosím svůj JSON.
+        </div>`;
+        return;
+      }
+      const pages = Array.isArray(data.slots) ? data.slots : [];
+      for (const page of pages) {
+        const pageEl = document.createElement('div');
+        pageEl.className = 'page';
+        viewer.appendChild(pageEl);
+
+        // Každou stránku vyrenderujeme rekurzivně:
+        renderNodeInto(page, pageEl);
+      }
+      viewer.scrollTop = 0;
+    }
+
+    function renderNodeInto(node, parent) {
+      if (!node || typeof node !== 'object') return;
+
+      const t = node.type;
+
+      if (t === 'background-decorator') {
+        const el = document.createElement('div');
+        el.className = 'background-decorator';
+        applyBackgroundOptions(el, node.options);
+        parent.appendChild(el);
+        renderSlots(node, el);
+        return;
+      }
+
+      if (t === 'inset-decorator') {
+        const el = document.createElement('div');
+        el.className = 'inset';
+        applyInset(el, node.options);
+        parent.appendChild(el);
+        renderSlots(node, el);
+        return;
+      }
+
+      if (t === 'split-layout') {
+        const el = document.createElement('div');
+        el.className = 'split-layout';
+        applySplitLayout(el, node.options);
+        parent.appendChild(el);
+        renderSlots(node, el);
+        return;
+      }
+
+      if (t === 'grid-layout') {
+        const el = document.createElement('div');
+        el.className = 'grid-layout';
+        applyGridLayout(el, node.options);
+        parent.appendChild(el);
+        renderSlots(node, el, /*gridChildrenOnly*/true);
+        return;
+      }
+
+      if (t === 'imager') {
+        const el = document.createElement('div');
+        el.className = 'imager';
+        const img = document.createElement('img');
+        const url = node?.options?.url;
+        if (url) img.src = url;
+        el.appendChild(img);
+        parent.appendChild(el);
+        return;
+      }
+
+      if (t === 'text-thing') {
+        const el = document.createElement('div');
+        el.className = 'text-thing';
+        const opts = node.options || {};
+        if (opts.html) el.innerHTML = opts.html;
+        const style = el.style;
+        // Podporujeme změny fontu přímo z JSONu:
+        if (opts['font-size']) style.fontSize = String(opts['font-size']);
+        if (opts['font-family']) style.fontFamily = String(opts['font-family']);
+        if (opts['h-align']) style.textAlign = opts['h-align'];
+        if (opts['v-align']) style.alignContent = 'center'; // přibližně
+        if (opts.css) {
+          // jednoduché inline CSS (riskantní – očekáváme jednoduché vlastnosti)
+          try {
+            // povolíme řetězce jako "color:red; line-height:1.4"
+            el.setAttribute('style', el.getAttribute('style') + ';' + opts.css);
+          } catch {}
+        }
+        parent.appendChild(el);
+        return;
+      }
+
+      if (t === 'video-thing') {
+        const el = document.createElement('div');
+        el.className = 'video';
+        const v = document.createElement('video');
+        const o = node.options || {};
+        const src = o.webm || o.mp4 || o.ogg || o.uri;
+        if (src) v.src = src;
+        if (o.autoplay) v.autoplay = true;
+        if (o.loop) v.loop = true;
+        v.controls = true;
+        v.muted = true; // prohlížeče jinak autoplay často blokují
+        v.playsInline = true;
+        el.appendChild(v);
+        parent.appendChild(el);
+        return;
+      }
+
+      // fallback: jen projdi sloty
+      renderSlots(node, parent);
+    }
+
+    function renderSlots(node, parent, gridChildrenOnly = false) {
+      const slots = node.slots;
+      if (!slots) return;
+
+      if (Array.isArray(slots)) {
+        for (const child of slots) renderNodeInto(child, parent);
+      } else if (typeof slots === 'object') {
+        if (gridChildrenOnly) {
+          // grid-layout: očekáváme pole ve 'slots' → už řešíme výše;
+          // některé tvé uzly ale používají pojmenované sloty, např. { slots: { content: {...} } }
+        }
+        for (const key of Object.keys(slots)) {
+          const child = slots[key];
+          renderNodeInto(child, parent);
+        }
+      }
+    }
+
+    // ---------- Helpers: styly pro uzly ----------
+    function applyBackgroundOptions(el, opts = {}) {
+      if (opts.image) el.style.backgroundImage = `url("${opts.image}")`;
+      if (opts.repeat) el.style.backgroundRepeat = opts.repeat;
+      if (opts.position) el.style.backgroundPosition = opts.position;
+      if (opts.size) el.style.backgroundSize = opts.size;
+      if (opts.color) el.style.backgroundColor = opts.color;
+    }
+
+    function applyInset(el, opts = {}) {
+      const num = v => (typeof v === 'number' ? v : parseFloat(v));
+      if (opts.top  != null) el.style.top    = (''+num(opts.top)) + (String(opts.top).includes('%') ? '' : '%');
+      if (opts.left != null) el.style.left   = (''+num(opts.left)) + (String(opts.left).includes('%') ? '' : '%');
+      if (opts.right!= null) el.style.right  = (''+num(opts.right))+ (String(opts.right).includes('%') ? '' : '%');
+      if (opts.bottom!= null) el.style.bottom= (''+num(opts.bottom))+ (String(opts.bottom).includes('%') ? '' : '%');
+    }
+
+    function applySplitLayout(el, opts = {}) {
+      const horizontal = !!opts.horizontal;
+      const ratio = Number(opts.ratio ?? 50);
+      const gap = opts.gap != null ? String(opts.gap) : '0';
+      el.style.gap = /\D/.test(gap) ? gap : `${gap}px`;
+
+      if (horizontal) {
+        // rozdělení na řádky
+        el.style.gridTemplateRows = `${ratio}% ${100 - ratio}%`;
+        el.style.gridTemplateColumns = `1fr`;
+      } else {
+        // rozdělení na sloupce
+        el.style.gridTemplateColumns = `${ratio}% ${100 - ratio}%`;
+        el.style.gridTemplateRows = `1fr`;
+      }
+    }
+
+    function applyGridLayout(el, opts = {}) {
+      const rows = Number(opts.rows ?? 1);
+      const cols = Number(opts.columns ?? 1);
+      const gap = opts.gap != null ? String(opts.gap) : '0';
+      el.style.gap = /\D/.test(gap) ? gap : `${gap}px`;
+      el.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
+      el.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
+    }
+  </script>
+</body>
+</html>

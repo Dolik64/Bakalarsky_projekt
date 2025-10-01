@@ -1,1 +1,614 @@
-{"type":"book","options":[],"slots":[{"type":"text-thing","options":{"html":"Slovensko - Vysok\u00e9 Tatry 2020","css":"","h-align":"center","v-align":"center","font-size":"20px","font-family":"Georgia, serif"}},{"type":"grid-layout","options":{"rows":2,"columns":2,"gap":2},"slots":[{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"imager","options":{"url":"images\/331\/DSCN0665_2_original.jpg","repeat":"no-repeat","position":"center center","color":"","size":"cover"}}}},{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"text-thing","options":{"html":"<p>Star&yacute; Smokovec &rArr; Hrebienok &rArr; Malou Studenou dolinou &rArr; p\u0159es Z&aacute;mkovsk&eacute;ho chatu &rArr; na Teryho chatu <span style=\"font-size:14px\"><strong>:)<\/strong><\/span><\/p>\r\n","css":"","h-align":"center","v-align":"center","font-size":"20px","font-family":"Georgia, serif"}}}},{"type":"text-thing","options":{"html":"Mlha \"na Blatech\"","css":"","h-align":"center","v-align":"center","font-size":"20px","font-family":"Georgia, serif"}},{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"imager","options":{"url":"images\/347\/DSCN0666_2_original.jpg","repeat":"no-repeat","position":"center center","color":"","size":"cover"}}}}]},{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"audio-decorator","options":{"ogg":"","mp3":"voices\/30\/Mumford_Sons_Hopeless_Wanderer_Official_Music_Video_original.mp3","uri":"voices\/30\/Mumford_Sons_Hopeless_Wanderer_Official_Music_Video_original.mp3","autoplay":true,"loop":false,"volume":50},"slots":{"content":{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"imager","options":{"url":"images\/333\/DSCN0669_2_original.jpg","repeat":"no-repeat","position":"center center","color":"white","size":"cover"}}}}}}}},{"type":"grid-layout","options":{"rows":2,"columns":1,"gap":2},"slots":[{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"video-thing","options":{"uri":"videos\/10\/video_1596110981_original.mp4","ogg":"","mp4":"videos\/10\/video_1596110981_original.mp4","webm":"","autoplay":true,"loop":true,"volume":20}}}},{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"imager","options":{"url":"images\/334\/DSCN0670_2_original.jpg","repeat":"no-repeat","position":"center center","color":"white","size":"cover"}}}}]},{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"imager","options":{"url":"images\/335\/DSCN0679_2_original.jpg","repeat":"no-repeat","position":"center center","color":"white","size":"cover"}}}},{"type":"grid-layout","options":{"rows":1,"columns":2,"gap":2},"slots":[{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"imager","options":{"url":"images\/337\/DSCN0689_2_original.jpg","repeat":"no-repeat","position":"center center","color":"","size":"cover"}}}},{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"audio-decorator","options":{"ogg":"","mp3":"voices\/31\/Jelen_Abych_tu_zil_original.mp3","uri":"voices\/31\/Jelen_Abych_tu_zil_original.mp3","autoplay":true,"loop":false,"volume":50},"slots":{"content":{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"imager","options":{"url":"images\/336\/DSCN0685_2_original.jpg","repeat":"no-repeat","position":"center center","color":"white","size":"cover"}}}}}}}}]},{"type":"grid-layout","options":{"rows":2,"columns":1,"gap":2},"slots":[{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"text-thing","options":{"html":"<p><em><strong><span style=\"background-color:#800080\">\u010clenov&eacute; v&yacute;pravy :))<\/span><\/strong><\/em><\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n","css":"","h-align":"center","v-align":"center","font-size":"20px","font-family":"Georgia, serif"}}}},{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"imager","options":{"url":"images\/338\/DSCN0696_2_original.jpg","repeat":"no-repeat","position":"center center","color":"white","size":"cover"}}}}]},{"type":"split-layout","options":{"ratio":65,"gap":2,"horizontal":false},"slots":{"first":{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"imager","options":{"url":"images\/339\/DSCN0697_original.JPG","repeat":"no-repeat","position":"center center","color":"white","size":"cover"}}}},"second":{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"text-thing","options":{"html":"<h1><u><strong>Popradsk&eacute; pleso<\/strong><\/u><\/h1>\r\n\r\n<h3>- ledovcov&eacute; jezero v <em>Mengusovsk&eacute; dolin\u011b<\/em> ve Vysok&yacute;ch Tatr&aacute;ch<\/h3>\r\n","css":"","h-align":"center","v-align":"center","font-size":"20px","font-family":"Georgia, serif"}}}}}},{"type":"split-layout","options":{"ratio":33,"gap":2,"horizontal":false},"slots":{"first":{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"text-thing","options":{"html":"<h1><u><strong>&#39;Nad mraky&#39;<\/strong><\/u><\/h1>\r\n\r\n<h3><em>- v&yacute;hled z Ostrvy<\/em><\/h3>\r\n","css":"","h-align":"center","v-align":"center","font-size":"20px","font-family":"Georgia, serif"}}}},"second":{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"imager","options":{"url":"images\/340\/DSCN0706_original.JPG","repeat":"no-repeat","position":"center center","color":"white","size":"cover"}}}}}},{"type":"grid-layout","options":{"rows":2,"columns":2,"gap":2},"slots":[{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"imager","options":{"url":"images\/341\/DSCN0708_original.JPG","repeat":"no-repeat","position":"center center","color":"white","size":"cover"}}}},{"type":"text-thing","options":{"html":"Popradsk\u00e9 pleso z Ostrvy","css":"","h-align":"center","v-align":"center","font-size":"20px","font-family":"Georgia, serif"}},{"type":"text-thing","options":{"html":"V\u00fdhled z Ostrvy","css":"","h-align":"center","v-align":"center","font-size":"20px","font-family":"Georgia, serif"}},{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"imager","options":{"url":"images\/342\/DSCN0712_2_original.jpg","repeat":"no-repeat","position":"center center","color":"white","size":"cover"}}}}]},{"type":"grid-layout","options":{"rows":2,"columns":1,"gap":2},"slots":[{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"imager","options":{"url":"images\/343\/DSCN0716_2_original.jpg","repeat":"no-repeat","position":"center center","color":"white","size":"cover"}}}},{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"imager","options":{"url":"images\/344\/DSCN0717_2_original.jpg","repeat":"no-repeat","position":"center center","color":"white","size":"cover"}}}}]},{"type":"split-layout","options":{"ratio":33,"gap":2,"horizontal":false},"slots":{"first":{"type":"text-thing","options":{"html":"Batizovsk\u00e9 pleso pod Gerlachovsk\u00fdm \u0161t\u00edtem","css":"","h-align":"center","v-align":"center","font-size":"20px","font-family":"Georgia, serif"}},"second":{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"imager","options":{"url":"images\/345\/DSCN0720_original.JPG","repeat":"no-repeat","position":"center center","color":"white","size":"cover"}}}}}},{"type":"ref-decorator","options":{"label":null,"source":""},"slots":{"content":{"type":"audio-decorator","options":{"ogg":"","mp3":"voices\/32\/Tom_Petty_And_The_Heartbreakers_Learning_To_Fly_Version_1_original.mp3","uri":"voices\/32\/Tom_Petty_And_The_Heartbreakers_Learning_To_Fly_Version_1_original.mp3","autoplay":true,"loop":false,"volume":75},"slots":{"content":{"type":"text-thing","options":{"html":"A tady na\u0161e v\u00fdprava kon\u010d\u00ed :)","css":"","h-align":"center","v-align":"center","font-size":"20px","font-family":"Georgia, serif"}}}}}}]}
+{
+    "type": "book",
+    "options": [],
+    "slots": [
+        {
+            "type": "text-thing",
+            "options": {
+                "html": "Slovensko - Vysoké Tatry 2020",
+                "css": "",
+                "h-align": "center",
+                "v-align": "center",
+                "font-size": "20px",
+                "font-family": "Georgia, serif"
+            }
+        },
+        {
+            "type": "grid-layout",
+            "options": {
+                "rows": 2,
+                "columns": 2,
+                "gap": 2
+            },
+            "slots": [
+                {
+                    "type": "ref-decorator",
+                    "options": {
+                        "label": null,
+                        "source": ""
+                    },
+                    "slots": {
+                        "content": {
+                            "type": "imager",
+                            "options": {
+                                "url": "images/331/DSCN0665_2_original.jpg",
+                                "repeat": "no-repeat",
+                                "position": "center center",
+                                "color": "",
+                                "size": "cover"
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "ref-decorator",
+                    "options": {
+                        "label": null,
+                        "source": ""
+                    },
+                    "slots": {
+                        "content": {
+                            "type": "text-thing",
+                            "options": {
+                                "html": "<p>Star&yacute; Smokovec &rArr; Hrebienok &rArr; Malou Studenou dolinou &rArr; přes Z&aacute;mkovsk&eacute;ho chatu &rArr; na Teryho chatu <span style=\"font-size:14px\"><strong>:)</strong></span></p>\r\n",
+                                "css": "",
+                                "h-align": "center",
+                                "v-align": "center",
+                                "font-size": "20px",
+                                "font-family": "Georgia, serif"
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "text-thing",
+                    "options": {
+                        "html": "Mlha \"na Blatech\"",
+                        "css": "",
+                        "h-align": "center",
+                        "v-align": "center",
+                        "font-size": "20px",
+                        "font-family": "Georgia, serif"
+                    }
+                },
+                {
+                    "type": "ref-decorator",
+                    "options": {
+                        "label": null,
+                        "source": ""
+                    },
+                    "slots": {
+                        "content": {
+                            "type": "imager",
+                            "options": {
+                                "url": "images/347/DSCN0666_2_original.jpg",
+                                "repeat": "no-repeat",
+                                "position": "center center",
+                                "color": "",
+                                "size": "cover"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ref-decorator",
+            "options": {
+                "label": null,
+                "source": ""
+            },
+            "slots": {
+                "content": {
+                    "type": "audio-decorator",
+                    "options": {
+                        "ogg": "",
+                        "mp3": "voices/30/Mumford_Sons_Hopeless_Wanderer_Official_Music_Video_original.mp3",
+                        "uri": "voices/30/Mumford_Sons_Hopeless_Wanderer_Official_Music_Video_original.mp3",
+                        "autoplay": true,
+                        "loop": false,
+                        "volume": 50
+                    },
+                    "slots": {
+                        "content": {
+                            "type": "ref-decorator",
+                            "options": {
+                                "label": null,
+                                "source": ""
+                            },
+                            "slots": {
+                                "content": {
+                                    "type": "imager",
+                                    "options": {
+                                        "url": "images/333/DSCN0669_2_original.jpg",
+                                        "repeat": "no-repeat",
+                                        "position": "center center",
+                                        "color": "white",
+                                        "size": "cover"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "grid-layout",
+            "options": {
+                "rows": 2,
+                "columns": 1,
+                "gap": 2
+            },
+            "slots": [
+                {
+                    "type": "ref-decorator",
+                    "options": {
+                        "label": null,
+                        "source": ""
+                    },
+                    "slots": {
+                        "content": {
+                            "type": "video-thing",
+                            "options": {
+                                "uri": "videos/10/video_1596110981_original.mp4",
+                                "ogg": "",
+                                "mp4": "videos/10/video_1596110981_original.mp4",
+                                "webm": "",
+                                "autoplay": true,
+                                "loop": true,
+                                "volume": 20
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "ref-decorator",
+                    "options": {
+                        "label": null,
+                        "source": ""
+                    },
+                    "slots": {
+                        "content": {
+                            "type": "imager",
+                            "options": {
+                                "url": "images/334/DSCN0670_2_original.jpg",
+                                "repeat": "no-repeat",
+                                "position": "center center",
+                                "color": "white",
+                                "size": "cover"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ref-decorator",
+            "options": {
+                "label": null,
+                "source": ""
+            },
+            "slots": {
+                "content": {
+                    "type": "imager",
+                    "options": {
+                        "url": "images/335/DSCN0679_2_original.jpg",
+                        "repeat": "no-repeat",
+                        "position": "center center",
+                        "color": "white",
+                        "size": "cover"
+                    }
+                }
+            }
+        },
+        {
+            "type": "grid-layout",
+            "options": {
+                "rows": 1,
+                "columns": 2,
+                "gap": 2
+            },
+            "slots": [
+                {
+                    "type": "ref-decorator",
+                    "options": {
+                        "label": null,
+                        "source": ""
+                    },
+                    "slots": {
+                        "content": {
+                            "type": "imager",
+                            "options": {
+                                "url": "images/337/DSCN0689_2_original.jpg",
+                                "repeat": "no-repeat",
+                                "position": "center center",
+                                "color": "",
+                                "size": "cover"
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "ref-decorator",
+                    "options": {
+                        "label": null,
+                        "source": ""
+                    },
+                    "slots": {
+                        "content": {
+                            "type": "audio-decorator",
+                            "options": {
+                                "ogg": "",
+                                "mp3": "voices/31/Jelen_Abych_tu_zil_original.mp3",
+                                "uri": "voices/31/Jelen_Abych_tu_zil_original.mp3",
+                                "autoplay": true,
+                                "loop": false,
+                                "volume": 50
+                            },
+                            "slots": {
+                                "content": {
+                                    "type": "ref-decorator",
+                                    "options": {
+                                        "label": null,
+                                        "source": ""
+                                    },
+                                    "slots": {
+                                        "content": {
+                                            "type": "imager",
+                                            "options": {
+                                                "url": "images/336/DSCN0685_2_original.jpg",
+                                                "repeat": "no-repeat",
+                                                "position": "center center",
+                                                "color": "white",
+                                                "size": "cover"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "grid-layout",
+            "options": {
+                "rows": 2,
+                "columns": 1,
+                "gap": 2
+            },
+            "slots": [
+                {
+                    "type": "ref-decorator",
+                    "options": {
+                        "label": null,
+                        "source": ""
+                    },
+                    "slots": {
+                        "content": {
+                            "type": "text-thing",
+                            "options": {
+                                "html": "<p><em><strong><span style=\"background-color:#800080\">Členov&eacute; v&yacute;pravy :))</span></strong></em></p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                                "css": "",
+                                "h-align": "center",
+                                "v-align": "center",
+                                "font-size": "20px",
+                                "font-family": "Georgia, serif"
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "ref-decorator",
+                    "options": {
+                        "label": null,
+                        "source": ""
+                    },
+                    "slots": {
+                        "content": {
+                            "type": "imager",
+                            "options": {
+                                "url": "images/338/DSCN0696_2_original.jpg",
+                                "repeat": "no-repeat",
+                                "position": "center center",
+                                "color": "white",
+                                "size": "cover"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "split-layout",
+            "options": {
+                "ratio": 65,
+                "gap": 2,
+                "horizontal": false
+            },
+            "slots": {
+                "first": {
+                    "type": "ref-decorator",
+                    "options": {
+                        "label": null,
+                        "source": ""
+                    },
+                    "slots": {
+                        "content": {
+                            "type": "imager",
+                            "options": {
+                                "url": "images/339/DSCN0697_original.JPG",
+                                "repeat": "no-repeat",
+                                "position": "center center",
+                                "color": "white",
+                                "size": "cover"
+                            }
+                        }
+                    }
+                },
+                "second": {
+                    "type": "ref-decorator",
+                    "options": {
+                        "label": null,
+                        "source": ""
+                    },
+                    "slots": {
+                        "content": {
+                            "type": "text-thing",
+                            "options": {
+                                "html": "<h1><u><strong>Popradsk&eacute; pleso</strong></u></h1>\r\n\r\n<h3>- ledovcov&eacute; jezero v <em>Mengusovsk&eacute; dolině</em> ve Vysok&yacute;ch Tatr&aacute;ch</h3>\r\n",
+                                "css": "",
+                                "h-align": "center",
+                                "v-align": "center",
+                                "font-size": "20px",
+                                "font-family": "Georgia, serif"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "split-layout",
+            "options": {
+                "ratio": 33,
+                "gap": 2,
+                "horizontal": false
+            },
+            "slots": {
+                "first": {
+                    "type": "ref-decorator",
+                    "options": {
+                        "label": null,
+                        "source": ""
+                    },
+                    "slots": {
+                        "content": {
+                            "type": "text-thing",
+                            "options": {
+                                "html": "<h1><u><strong>&#39;Nad mraky&#39;</strong></u></h1>\r\n\r\n<h3><em>- v&yacute;hled z Ostrvy</em></h3>\r\n",
+                                "css": "",
+                                "h-align": "center",
+                                "v-align": "center",
+                                "font-size": "20px",
+                                "font-family": "Georgia, serif"
+                            }
+                        }
+                    }
+                },
+                "second": {
+                    "type": "ref-decorator",
+                    "options": {
+                        "label": null,
+                        "source": ""
+                    },
+                    "slots": {
+                        "content": {
+                            "type": "imager",
+                            "options": {
+                                "url": "images/340/DSCN0706_original.JPG",
+                                "repeat": "no-repeat",
+                                "position": "center center",
+                                "color": "white",
+                                "size": "cover"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "grid-layout",
+            "options": {
+                "rows": 2,
+                "columns": 2,
+                "gap": 2
+            },
+            "slots": [
+                {
+                    "type": "ref-decorator",
+                    "options": {
+                        "label": null,
+                        "source": ""
+                    },
+                    "slots": {
+                        "content": {
+                            "type": "imager",
+                            "options": {
+                                "url": "images/341/DSCN0708_original.JPG",
+                                "repeat": "no-repeat",
+                                "position": "center center",
+                                "color": "white",
+                                "size": "cover"
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "text-thing",
+                    "options": {
+                        "html": "Popradské pleso z Ostrvy",
+                        "css": "",
+                        "h-align": "center",
+                        "v-align": "center",
+                        "font-size": "20px",
+                        "font-family": "Georgia, serif"
+                    }
+                },
+                {
+                    "type": "text-thing",
+                    "options": {
+                        "html": "Výhled z Ostrvy",
+                        "css": "",
+                        "h-align": "center",
+                        "v-align": "center",
+                        "font-size": "20px",
+                        "font-family": "Georgia, serif"
+                    }
+                },
+                {
+                    "type": "ref-decorator",
+                    "options": {
+                        "label": null,
+                        "source": ""
+                    },
+                    "slots": {
+                        "content": {
+                            "type": "imager",
+                            "options": {
+                                "url": "images/342/DSCN0712_2_original.jpg",
+                                "repeat": "no-repeat",
+                                "position": "center center",
+                                "color": "white",
+                                "size": "cover"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "grid-layout",
+            "options": {
+                "rows": 2,
+                "columns": 1,
+                "gap": 2
+            },
+            "slots": [
+                {
+                    "type": "ref-decorator",
+                    "options": {
+                        "label": null,
+                        "source": ""
+                    },
+                    "slots": {
+                        "content": {
+                            "type": "imager",
+                            "options": {
+                                "url": "images/343/DSCN0716_2_original.jpg",
+                                "repeat": "no-repeat",
+                                "position": "center center",
+                                "color": "white",
+                                "size": "cover"
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "ref-decorator",
+                    "options": {
+                        "label": null,
+                        "source": ""
+                    },
+                    "slots": {
+                        "content": {
+                            "type": "imager",
+                            "options": {
+                                "url": "images/344/DSCN0717_2_original.jpg",
+                                "repeat": "no-repeat",
+                                "position": "center center",
+                                "color": "white",
+                                "size": "cover"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "split-layout",
+            "options": {
+                "ratio": 33,
+                "gap": 2,
+                "horizontal": false
+            },
+            "slots": {
+                "first": {
+                    "type": "text-thing",
+                    "options": {
+                        "html": "Batizovské pleso pod Gerlachovským štítem",
+                        "css": "",
+                        "h-align": "center",
+                        "v-align": "center",
+                        "font-size": "20px",
+                        "font-family": "Georgia, serif"
+                    }
+                },
+                "second": {
+                    "type": "ref-decorator",
+                    "options": {
+                        "label": null,
+                        "source": ""
+                    },
+                    "slots": {
+                        "content": {
+                            "type": "imager",
+                            "options": {
+                                "url": "images/345/DSCN0720_original.JPG",
+                                "repeat": "no-repeat",
+                                "position": "center center",
+                                "color": "white",
+                                "size": "cover"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "type": "ref-decorator",
+            "options": {
+                "label": null,
+                "source": ""
+            },
+            "slots": {
+                "content": {
+                    "type": "audio-decorator",
+                    "options": {
+                        "ogg": "",
+                        "mp3": "voices/32/Tom_Petty_And_The_Heartbreakers_Learning_To_Fly_Version_1_original.mp3",
+                        "uri": "voices/32/Tom_Petty_And_The_Heartbreakers_Learning_To_Fly_Version_1_original.mp3",
+                        "autoplay": true,
+                        "loop": false,
+                        "volume": 75
+                    },
+                    "slots": {
+                        "content": {
+                            "type": "text-thing",
+                            "options": {
+                                "html": "A tady naše výprava končí :)",
+                                "css": "",
+                                "h-align": "center",
+                                "v-align": "center",
+                                "font-size": "20px",
+                                "font-family": "Georgia, serif"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

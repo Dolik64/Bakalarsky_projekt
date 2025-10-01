@@ -11,6 +11,7 @@
 /escrapbook/escrapbook/eScrapBook_-_Entwicklungsgeschichte/voices/
 /escrapbook/escrapbook/TZ-DON-Buch_Iran/videos/
 /escrapbook/escrapbook/TZ-DON-Buch_Iran/images/
-#/escrapbook/escrapbook/neni_projekt/
-/neni_projekt/
+#/escrapbook/escrapbook/neni_projekt/    #chyba byla v tom ze neni_projekt se nachazi na stejne urovni jako escrapbook
+/neni_projekt/    
+#tohle je slozka s nejakym odpadem
 *.zip
