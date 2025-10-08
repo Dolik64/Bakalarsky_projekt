@@ -8,7 +8,9 @@ from pathlib import Path
 from datetime import datetime
 
 # === Uprav si kořen a explicitní excludy ===
-ROOT_DIR = r"C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook"
+#ROOT_DIR = r"C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook"
+ROOT_DIR = r"C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte"
+
 EXPLICIT_EXCLUDES = [
     r"C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\video_1596110981_original.mp4",
     r"C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\zaloha",

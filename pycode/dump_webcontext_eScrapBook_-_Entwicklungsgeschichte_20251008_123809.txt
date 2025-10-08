@@ -1,0 +1,251 @@
+ROOT: C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte
+Relevance rules:
+  INCLUDE_EXTS: .cfg, .cjs, .conf, .css, .csv, .env, .htm, .html, .ini, .js, .json, .md, .mjs, .svg, .tsv, .txt, .xml, .yaml, .yml
+  AUTO_EXCLUDE_DIR_NAMES: .git, .svn, .venv, __pycache__, audio, backup, backups, build, cache, dist, image, images, img, media, node_modules, temp, tmp, video, videos, voice, voices, zaloha
+  AUTO_EXCLUDE_EXTS: .7z, .aac, .avi, .bin, .bmp, .bz2, .dat, .dll, .dmg, .dylib, .eot, .exe, .flac, .flv, .gif, .gz, .ico, .iso, .jpeg, .jpg, .m4a, .m4v, .mkv, .mov, .mp3, .mp4, .ogg, .otf, .pak, .pdf, .png, .rar, .so, .svgz, .tar, .tiff, .ttf, .wav, .webm, .webp, .wmv, .woff, .woff2, .xz, .zip
+  EXTRA_AUTO_EXCLUDE_EXTS: .map
+  EXTRA_AUTO_EXCLUDE_BASENAMES: -
+  ALWAYS_INCLUDE_BASENAMES: LICENSE, README, RUNeScrapBook, RUNeScrapBook.bat, book.json, connector.js, index.htm, index.html, logging.js, wow.json
+
+Settings: PRINT_TREE=True, PRINT_CONTENT=True, HEAD_BYTES=1024, TAIL_BYTES=256
+
+Explicit excludes (resolved):
+  [DIR]  C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\TZ-DON-Buch_Iran\images
+  [DIR]  C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\TZ-DON-Buch_Iran\videos
+  [DIR]  C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\images
+  [DIR]  C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\videos
+  [DIR]  C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\voices
+  [DIR]  C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_Takova_normalni_rodinka\images
+  [DIR]  C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_Takova_normalni_rodinka\videos
+  [DIR]  C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\slovensko\images
+  [DIR]  C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\slovensko\videos\10
+  [DIR]  C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\slovensko\voices
+
+================================================================================
+HIERARCHIE (pouze zahrnuté soubory a jejich nadřazené složky)
+================================================================================
+C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte (root)
+├── css/
+│   ├── combined.css
+│   ├── styles.css
+│   └── viewer.css
+├── js/
+│   ├── libs-viewer.js
+│   └── mykkro-viewer.js
+├── book.json
+├── files
+├── index.html
+├── README
+├── RUNeScrapBook
+└── RUNeScrapBook.bat
+
+================================================================================
+OBSAH SOUBORŮ (zkráceně: head+tail; speciální souhrny pro index.html/book.json/files)
+================================================================================
+
+--------------------------------------------------------------------------------
+SOUČÁST: book.json
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\book.json
+VELIKOST: 7865 B (7.68 KB)
+TYP:      textový
+--------------------------------------------------------------------------------
+<<<BOOK.JSON SUMMARY>>>
+{
+  "type": "book",
+  "slots_count": 10,
+  "unique_urls": 18,
+  "options_keys": [
+    "background_image_url",
+    "backpage_image_url",
+    "evenpage_image_url",
+    "frontpage_image_url",
+    "oddpage_image_url",
+    "turnleft_image_url",
+    "turnright_image_url"
+  ]
+}
+<<<BOOK.JSON PREVIEW (truncated)>>>
+{"type":"book","options":{"background_image_url":"images\/111\/bg_wood_texture_v02_original.jpg","frontpage_image_url":"images\/94\/bookJacket_eScrapBook_F_original.JPG","backpage_image_url":"images\/95\/bookJacket_eScrapBook_B_original.JPG","oddpage_image_url":"images\/131\/page_L_original.JPG","evenpage_image_url":"images\/132\/page_R_original.JPG","turnleft_image_url":"images\/113\/icon_turn_left_256_v01_original.png","turnright_image_url":"images\/114\/icon_turn_right_256_v01_original.png"},"slots":[{"type":"background-decorator","options":{"image":"images\/94\/bookJacket_eScrapBook_F_original.JPG","repeat":"no-repeat","position":"center center","color":"white","size":"cover"},"slots":{"content":{"type":"inset-decorator","options":{"top":60,"left":26,"right":16,"bottom":60},"slots":{"content":{"type":"text-thing","options":{"html":"Entwicklungsgeschichte","css":"","h-align":"center","v-align":"center","font-size":"120%","font-family":"Verdana,Geneva,sans-serif"}}}}}},{"type":"inset-decorator","options":{"
+<<<…>>>
+
+--------------------------------------------------------------------------------
+SOUČÁST: files
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\files
+VELIKOST: 1583 B (1.55 KB)
+TYP:      textový
+--------------------------------------------------------------------------------
+<<<FILES MAPPING>>>
+items_total=16
+examples:
+  - images/94/bookJacket_eScrapBook_F_original.JPG -> images/94/bookJacket_eScrapBook_F_original.JPG
+  - images/98/Myrousz_original.JPG -> images/98/Myrousz_original.JPG
+  - images/100/eScrapBook_prototype02_original.JPG -> images/100/eScrapBook_prototype02_original.JPG
+  - images/99/eScrapBook_prototype01_original.JPG -> images/99/eScrapBook_prototype01_original.JPG
+  - images/101/img01_original.JPG -> images/101/img01_original.JPG
+  - voices/4/Entspannungsmusik_Meeresrauschen_original.ogg -> voices/4/Entspannungsmusik_Meeresrauschen_original.ogg
+  - images/102/eScrapBookWebApp_eBookSchiffahrt_View01_original.JPG -> images/102/eScrapBookWebApp_eBookSchiffahrt_View01_original.JPG
+  - images/139/eScrapBookWebApp_eBookSchiffahrt_View02_original.JPG -> images/139/eScrapBookWebApp_eBookSchiffahrt_View02_original.JPG
+  - images/140/img02_original.JPG -> images/140/img02_original.JPG
+  - videos/11/eScrapBook_Praesentation_IranischeKultur_original.webm -> videos/11/eScrapBook_Praesentation_IranischeKultur_original.webm
+
+--------------------------------------------------------------------------------
+SOUČÁST: index.html
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\index.html
+VELIKOST: 8685 B (8.48 KB)
+TYP:      textový
+--------------------------------------------------------------------------------
+[INFO] index.html: inline book nahrazen souhrnem: [BOOK_JSON_EMBEDDED] slots=10, urls=18
+<<<BEGIN TEXT (truncated head+tail)>>>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>eScrapBook</title>
+<link href="images/favicon.ico" type="image/x-icon" rel="icon">
+<link href="images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+<link rel="stylesheet" type="text/css" href="css/viewer.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script>
+    var LocaleStrings = {};
+</script>
+<script type="text/javascript" src="js/libs-viewer.js"></script>
+<script type="text/javascript" src="js/mykkro-viewer.js"></script></head>
+<body>
+<script>
+$(document).ready(function() {
+    var book = "/* [BOOK_JSON_EMBEDDED] slots=10, urls=18 */";
+    var bookView = new ExportBookViewer({data:book, fullscreen:true});
+    bookView.init();
+});
+</script>
+<div id="fullscreen" style="width: 100%; height: 100%;">
+</div>
+</body>
+</html><<<END TEXT>>>
+
+--------------------------------------------------------------------------------
+SOUČÁST: README
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\README
+VELIKOST: 44 B (44.00 B)
+TYP:      textový
+--------------------------------------------------------------------------------
+<<<BEGIN TEXT (truncated head+tail)>>>
+This is automatically generated README file.<<<END TEXT>>>
+
+--------------------------------------------------------------------------------
+SOUČÁST: RUNeScrapBook
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\RUNeScrapBook
+VELIKOST: 49 B (49.00 B)
+TYP:      textový
+--------------------------------------------------------------------------------
+<<<BEGIN TEXT (truncated head+tail)>>>
+#!/bin/bash
+chromium-browser --kiosk "index.html"<<<END TEXT>>>
+
+--------------------------------------------------------------------------------
+SOUČÁST: RUNeScrapBook.bat
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\RUNeScrapBook.bat
+VELIKOST: 53 B (53.00 B)
+TYP:      textový
+--------------------------------------------------------------------------------
+<<<BEGIN TEXT (truncated head+tail)>>>
+@echo off
+start chrome.exe --kiosk "%~dp0index.html"
+<<<END TEXT>>>
+
+--------------------------------------------------------------------------------
+SOUČÁST: css\combined.css
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\css\combined.css
+VELIKOST: 19236 B (18.79 KB)
+TYP:      textový
+--------------------------------------------------------------------------------
+[METRICS] lines=861, sha256=2f1a1c2da0ef84069c34e69f1aad44d8289d3f7e70fc5601ab290d086334a5bd
+
+--------------------------------------------------------------------------------
+SOUČÁST: css\styles.css
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\css\styles.css
+VELIKOST: 47135 B (46.03 KB)
+TYP:      textový
+--------------------------------------------------------------------------------
+[METRICS] lines=1, sha256=377699f820d8e4d9ee5eb95e89605fc4a63a0c173c08dada509e6e904141f55c
+
+--------------------------------------------------------------------------------
+SOUČÁST: css\viewer.css
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\css\viewer.css
+VELIKOST: 1315 B (1.28 KB)
+TYP:      textový
+--------------------------------------------------------------------------------
+[METRICS] lines=62, sha256=3c05a80b0066fc836ef09649ca6b2d311db1c726154190b774a9ea26d2db2eb8
+
+--------------------------------------------------------------------------------
+SOUČÁST: js\libs-viewer.js
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\js\libs-viewer.js
+VELIKOST: 371464 B (362.76 KB)
+TYP:      textový
+--------------------------------------------------------------------------------
+[METRICS] lines=2319, sha256=d49d1e0e651a65f71bb57618a7bb36661707c136fd57625d69464422488bb51c
+
+--------------------------------------------------------------------------------
+SOUČÁST: js\mykkro-viewer.js
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\js\mykkro-viewer.js
+VELIKOST: 203085 B (198.33 KB)
+TYP:      textový
+--------------------------------------------------------------------------------
+<<<BEGIN TEXT (truncated head+tail)>>>
+// configuration file
+var DEBUG = false;
+
+var Config = {
+};
+var __ = function(arg) {
+    return LocaleStrings[arg] || arg;
+}
+
+/*
+	Base.js, version 1.1
+	Copyright 2006-2007, Dean Edwards
+	License: http://www.opensource.org/licenses/mit-license.php
+*/
+
+var Base = function() {
+	// dummy
+};
+
+Base.extend = function(_instance, _static) { // subclass
+	var extend = Base.prototype.extend;
+	
+	// build the prototype
+	Base._prototyping = true;
+	var proto = new this;
+	extend.call(proto, _instance);
+	delete Base._prototyping;
+	
+	// create the wrapper for the constructor function
+	//var constructor = proto.constructor.valueOf(); //-dean
+	var constructor = proto.constructor;
+	var klass = proto.constructor = function() {
+		if (!Base._prototyping) {
+			if (this._constructing || this.constructor == klass) { // instantiation
+				this._constructing = true;
+				constructor.apply(this, arguments);
+				delete this._constructing;
+			} else if (arguments[0] != null) { // casting
+				return (arguments[0].extend || extend).call(argument
+<<<TRUNCATED: vypsáno 1024+256 z 203085 bajtů>>>
+edia);
+        },
+        swfPath: "/js",
+        supplied: "m4v, ogv",
+        cssSelectorAncestor: "#"+containerId
+    });    
+    return div;
+};
+
+// initialization...
+$(document).ready(function() {
+
+    // widgetizer...
+    widgetize($(".widget"));
+
+});<<<END TEXT>>>
+

@@ -18,7 +18,8 @@ from typing import Iterable, Set, Tuple
 # === ▼ UPRAV TADY ▼ ==========================================================
 
 # Kořen projektu:
-ROOT_DIR = r"C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook"
+#ROOT_DIR = r"C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook"
+ROOT_DIR = r"C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte"
 
 # Tvoje explicitní vyloučení:
 EXPLICIT_EXCLUDES = [

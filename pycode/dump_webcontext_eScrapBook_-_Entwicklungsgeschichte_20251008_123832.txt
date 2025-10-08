@@ -1,0 +1,720 @@
+ROOT: C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte
+Relevance rules:
+  INCLUDE_EXTS: .cfg, .cjs, .conf, .css, .csv, .env, .htm, .html, .ini, .js, .json, .md, .mjs, .svg, .tsv, .txt, .xml, .yaml, .yml
+  AUTO_EXCLUDE_DIR_NAMES: .git, .svn, .venv, __pycache__, audio, backup, backups, build, cache, dist, image, images, img, media, node_modules, temp, tmp, video, videos, voice, voices, zaloha
+  AUTO_EXCLUDE_EXTS: .7z, .aac, .avi, .bin, .bmp, .bz2, .dat, .dll, .dmg, .dylib, .eot, .exe, .flac, .flv, .gif, .gz, .ico, .iso, .jpeg, .jpg, .m4a, .m4v, .mkv, .mov, .mp3, .mp4, .ogg, .otf, .pak, .pdf, .png, .rar, .so, .svgz, .tar, .tiff, .ttf, .wav, .webm, .webp, .wmv, .woff, .woff2, .xz, .zip
+  EXTRA_AUTO_EXCLUDE_EXTS: .map
+  EXTRA_AUTO_EXCLUDE_BASENAMES: -
+  ALWAYS_INCLUDE_BASENAMES: LICENSE, README, RUNeScrapBook, RUNeScrapBook.bat, book.json, connector.js, index.htm, index.html, logging.js, wow.json
+
+Settings: PRINT_TREE=True, PRINT_CONTENT=True, HEAD_BYTES=4096, TAIL_BYTES=1024
+
+Explicit excludes (resolved):
+  [DIR]  C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\TZ-DON-Buch_Iran\images
+  [DIR]  C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\TZ-DON-Buch_Iran\videos
+  [DIR]  C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\images
+  [DIR]  C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\videos
+  [DIR]  C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\voices
+  [DIR]  C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_Takova_normalni_rodinka\images
+  [DIR]  C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_Takova_normalni_rodinka\videos
+  [DIR]  C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\slovensko\images
+  [DIR]  C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\slovensko\videos\10
+  [DIR]  C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\slovensko\voices
+
+================================================================================
+HIERARCHIE (pouze zahrnuté soubory a jejich nadřazené složky)
+================================================================================
+C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte (root)
+├── css/
+│   ├── combined.css
+│   ├── styles.css
+│   └── viewer.css
+├── js/
+│   ├── libs-viewer.js
+│   └── mykkro-viewer.js
+├── book.json
+├── files
+├── index.html
+├── README
+├── RUNeScrapBook
+└── RUNeScrapBook.bat
+
+================================================================================
+OBSAH SOUBORŮ (zkráceně: head+tail; speciální souhrny pro index.html/book.json/files)
+================================================================================
+
+--------------------------------------------------------------------------------
+SOUČÁST: book.json
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\book.json
+VELIKOST: 7865 B (7.68 KB)
+TYP:      textový
+--------------------------------------------------------------------------------
+<<<BOOK.JSON SUMMARY>>>
+{
+  "type": "book",
+  "slots_count": 10,
+  "unique_urls": 18,
+  "options_keys": [
+    "background_image_url",
+    "backpage_image_url",
+    "evenpage_image_url",
+    "frontpage_image_url",
+    "oddpage_image_url",
+    "turnleft_image_url",
+    "turnright_image_url"
+  ]
+}
+<<<BOOK.JSON PREVIEW (truncated)>>>
+{"type":"book","options":{"background_image_url":"images\/111\/bg_wood_texture_v02_original.jpg","frontpage_image_url":"images\/94\/bookJacket_eScrapBook_F_original.JPG","backpage_image_url":"images\/95\/bookJacket_eScrapBook_B_original.JPG","oddpage_image_url":"images\/131\/page_L_original.JPG","evenpage_image_url":"images\/132\/page_R_original.JPG","turnleft_image_url":"images\/113\/icon_turn_left_256_v01_original.png","turnright_image_url":"images\/114\/icon_turn_right_256_v01_original.png"},"slots":[{"type":"background-decorator","options":{"image":"images\/94\/bookJacket_eScrapBook_F_original.JPG","repeat":"no-repeat","position":"center center","color":"white","size":"cover"},"slots":{"content":{"type":"inset-decorator","options":{"top":60,"left":26,"right":16,"bottom":60},"slots":{"content":{"type":"text-thing","options":{"html":"Entwicklungsgeschichte","css":"","h-align":"center","v-align":"center","font-size":"120%","font-family":"Verdana,Geneva,sans-serif"}}}}}},{"type":"inset-decorator","options":{"top":5,"left":5,"right":5,"bottom":5},"slots":{"content":{"type":"grid-layout","options":{"rows":2,"columns":1,"gap":2},"slots":[{"type":"imager","options":{"url":"images\/98\/Myrousz_original.JPG","repeat":"no-repeat","position":"center center","color":"white","size":"cover"}},{"type":"split-layout","options":{"ratio":10,"gap":2,"horizontal":false},"slots":{"first":{"type":"text-thing","options":{"html":"Myrousz \u2013 Bei der Zusammenarbeit mit den Kolleginnen des \n\nFSW","css":"","h-align":"center","v-align":"center","font-size":"50%","font-family":"Verdana,Geneva,sans-serif"}},"second":{"type":"text-thing","options":{"html":"<p><span style=\"color:#4B0082\"><span style=\"font-size:18px\"><span style=\"font-family:verdana,geneva,sans-serif\"><span style=\"background-color:#DAA520\">So wurde eScrapBook geboren...<\/span><\/span><\/span><\/span><\/p>\r\n\r\n<p><span style=\"font-size:18px\"><span style=\"font-family:verdana,geneva,sans-serif\"><span style=\"background-color:#FFD700\">Es war September 2012.<\/span><br \/>\r\n<span style=\"background-color:#FFD700\">Miroslav Uller (Myrousz) von CVUT aus Prag<\/span><br \/>\r\n<span style=\"background-color:#FFD700\">hat FSW Tageszentrum Donaufeld besucht<\/span><br \/>\r\n<span style=\"background-color:#FFD700\">und ersten Prototyp von eScrapBook Web Applikation pr&auml;sentiert.<\/span><\/span><\/span><\/p>\r\n","css":"","h-align":"center","v-align":"center","font-size":"20px","font-family":"Georgia, serif"}}}}]}}},{"type":"inset-decorator","options":{"top":5,"left":5,"right":5,"bottom":5},"slots":{"content":{"type":"grid-layout","options":{"rows":3,"columns":1,"gap":2},"slots":[{"type":"text-thing","options":{"html":"Am Anfang stand die Idee von Christine Petioky, eine \n\nApplikation\nzur Gehirnstimulation zu entwickeln. Sie hat Frau Professor \n\nOlga Stepankova\nvon der CVUT in Prag eine Zusmmanarbeit mit der UNI Wien \n\nund dem FSW vorgeschlagen. ","css":"","h-align":"center","v-align":"center","font-size":"85%","font-family":"Verdana,Geneva,sans-serif"}},{"type":"text-thing","options":{"html":"Es war ein langer Weg, mit vielen Upgrades und weiteren \n\nVerbesserungen\ndes Designs der Benutzeroberfl\u00e4che.","css":"","h-align":"center","v-align":"center","font-size":"85%","font-family":"Verdana,Geneva,sans-serif"}},{"type":"text-thing","options":{"html":"Aber die eScrapBook Web Applikation ist schon da und es steht \n\nuns allen zur Verf\u00fcgung :).","css":"","h-align":"center","v-align":"center","font-size":"120%","font-family":"Verdana,Geneva,sans-serif"}}]}}},{"type":"inset-decorator","options":{"top":5,"left":5,"right":5,"bottom":5},"slots":{"content":{"type":"grid-layout","options":{"rows":2,"columns":1,"gap":2},"slots":[{"type":"imager","options":{"url":"images\/100\/eScrapBook_prototype02_original.JPG","repeat":"no-repeat","position":"center center","color":"white","size":"contain"}},{"type":"text-thing","options":{"html":"So hat erstes eScrapBook Prototyp  ausgesehen.","css":"","h-align":"center","v-align":"center","font-size":"100%","font-family":
+<<<…>>>
+
+--------------------------------------------------------------------------------
+SOUČÁST: files
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\files
+VELIKOST: 1583 B (1.55 KB)
+TYP:      textový
+--------------------------------------------------------------------------------
+<<<FILES MAPPING>>>
+items_total=16
+examples:
+  - images/94/bookJacket_eScrapBook_F_original.JPG -> images/94/bookJacket_eScrapBook_F_original.JPG
+  - images/98/Myrousz_original.JPG -> images/98/Myrousz_original.JPG
+  - images/100/eScrapBook_prototype02_original.JPG -> images/100/eScrapBook_prototype02_original.JPG
+  - images/99/eScrapBook_prototype01_original.JPG -> images/99/eScrapBook_prototype01_original.JPG
+  - images/101/img01_original.JPG -> images/101/img01_original.JPG
+  - voices/4/Entspannungsmusik_Meeresrauschen_original.ogg -> voices/4/Entspannungsmusik_Meeresrauschen_original.ogg
+  - images/102/eScrapBookWebApp_eBookSchiffahrt_View01_original.JPG -> images/102/eScrapBookWebApp_eBookSchiffahrt_View01_original.JPG
+  - images/139/eScrapBookWebApp_eBookSchiffahrt_View02_original.JPG -> images/139/eScrapBookWebApp_eBookSchiffahrt_View02_original.JPG
+  - images/140/img02_original.JPG -> images/140/img02_original.JPG
+  - videos/11/eScrapBook_Praesentation_IranischeKultur_original.webm -> videos/11/eScrapBook_Praesentation_IranischeKultur_original.webm
+
+--------------------------------------------------------------------------------
+SOUČÁST: index.html
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\index.html
+VELIKOST: 8685 B (8.48 KB)
+TYP:      textový
+--------------------------------------------------------------------------------
+[INFO] index.html: inline book nahrazen souhrnem: [BOOK_JSON_EMBEDDED] slots=10, urls=18
+<<<BEGIN TEXT (truncated head+tail)>>>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>eScrapBook</title>
+<link href="images/favicon.ico" type="image/x-icon" rel="icon">
+<link href="images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+<link rel="stylesheet" type="text/css" href="css/viewer.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script>
+    var LocaleStrings = {};
+</script>
+<script type="text/javascript" src="js/libs-viewer.js"></script>
+<script type="text/javascript" src="js/mykkro-viewer.js"></script></head>
+<body>
+<script>
+$(document).ready(function() {
+    var book = "/* [BOOK_JSON_EMBEDDED] slots=10, urls=18 */";
+    var bookView = new ExportBookViewer({data:book, fullscreen:true});
+    bookView.init();
+});
+</script>
+<div id="fullscreen" style="width: 100%; height: 100%;">
+</div>
+</body>
+</html><<<END TEXT>>>
+
+--------------------------------------------------------------------------------
+SOUČÁST: README
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\README
+VELIKOST: 44 B (44.00 B)
+TYP:      textový
+--------------------------------------------------------------------------------
+<<<BEGIN TEXT (truncated head+tail)>>>
+This is automatically generated README file.<<<END TEXT>>>
+
+--------------------------------------------------------------------------------
+SOUČÁST: RUNeScrapBook
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\RUNeScrapBook
+VELIKOST: 49 B (49.00 B)
+TYP:      textový
+--------------------------------------------------------------------------------
+<<<BEGIN TEXT (truncated head+tail)>>>
+#!/bin/bash
+chromium-browser --kiosk "index.html"<<<END TEXT>>>
+
+--------------------------------------------------------------------------------
+SOUČÁST: RUNeScrapBook.bat
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\RUNeScrapBook.bat
+VELIKOST: 53 B (53.00 B)
+TYP:      textový
+--------------------------------------------------------------------------------
+<<<BEGIN TEXT (truncated head+tail)>>>
+@echo off
+start chrome.exe --kiosk "%~dp0index.html"
+<<<END TEXT>>>
+
+--------------------------------------------------------------------------------
+SOUČÁST: css\combined.css
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\css\combined.css
+VELIKOST: 19236 B (18.79 KB)
+TYP:      textový
+--------------------------------------------------------------------------------
+<<<BEGIN TEXT (truncated head+tail)>>>
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.jsoneditor-field, .jsoneditor-value, .jsoneditor-field-readonly, .jsoneditor-readonly {
+    border: 1px solid transparent;
+    min-height: 16px;
+    min-width: 24px;
+    padding: 2px;
+    margin: 1px;
+    outline: none;
+    word-wrap: break-word;
+    float: left;
+}
+
+/* adjust margin of p elements inside editable divs, needed for Opera, IE */
+.jsoneditor-field p, .jsoneditor-value p {
+    margin: 0;
+}
+
+.jsoneditor-value {
+    word-break: break-word;
+}
+
+.jsoneditor-empty {
+    background-color: #E5E5E5;
+    border-radius: 2px;
+}
+
+.jsoneditor-separator {
+    padding: 3px 0;
+    vertical-align: top;
+}
+
+.jsoneditor-value:focus, .jsoneditor-field:focus,
+        .jsoneditor-value:hover, .jsoneditor-field:hover,
+        .jsoneditor-search-highlight {
+    background-color: #FFFFAB;
+    border: 1px solid yellow;
+    border-radius: 2px;
+}
+
+.jsoneditor-search-highlight-active,
+        .jsoneditor-search-highlight-active:focus,
+        .jsoneditor-search-highlight-active:hover {
+    background-color: #ffee00;
+    border: 1px solid #ffc700;
+    border-radius: 2px;
+}
+
+.jsoneditor-field-readonly:hover {
+    border: 1px solid white;
+}
+
+.jsoneditor-readonly {
+    color: gray;
+}
+
+button.jsoneditor-remove, button.jsoneditor-append, button.jsoneditor-duplicate,
+button.jsoneditor-collapsed, button.jsoneditor-expanded,
+button.jsoneditor-invisible, button.jsoneditor-dragarea,
+button.jsoneditor-type-auto, button.jsoneditor-type-string,
+button.jsoneditor-type-array, button.jsoneditor-type-object {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    background: url('../img/jsoneditor-icons.png');
+}
+
+button:disabled {
+    color: #808080;
+}
+
+button.jsoneditor-collapsed {
+    background-position: -168px 0;
+}
+
+button.jsoneditor-expanded {
+    background-position: -168px -24px;
+}
+
+button.jsoneditor-invisible {
+    visibility: hidden;
+    background: none;
+}
+
+button.jsoneditor-collapsed, button.jsoneditor-expanded,
+button.jsoneditor-invisible {
+    float: left;
+}
+
+button.jsoneditor-remove {
+    background-position: -24px -24px;
+}
+button.jsoneditor-remove:hover {
+    background-position: -24px 0;
+}
+
+button.jsoneditor-append {
+    background-position: 0 -24px;
+}
+button.jsoneditor-append:hover {
+    background-position: 0 0;
+}
+
+button.jsoneditor-duplicate {
+    background-position: -48px -24px;
+}
+button.jsoneditor-duplicate:hover {
+    background-position: -48px 0;
+}
+
+button.jsoneditor-type-string {
+    background-position: -144px -24px;
+}
+button.jsoneditor-type-string:hover {
+    background-position: -144px 0;
+}
+
+button.jsoneditor-type-auto {
+    background-position: -120px -24px;
+}
+button.jsoneditor-type-auto:hover {
+    background-position: -120px 0;
+}
+
+button.jsoneditor-type-object {
+    background-posit
+<<<TRUNCATED: vypsáno 4096+1024 z 19236 bajtů>>>
+k !important;
+}
+.syntaxhighlighter .comments, .syntaxhighlighter .comments a {
+  color: #008200 !important;
+}
+.syntaxhighlighter .string, .syntaxhighlighter .string a {
+  color: blue !important;
+}
+.syntaxhighlighter .keyword {
+  color: #006699 !important;
+}
+.syntaxhighlighter .preprocessor {
+  color: gray !important;
+}
+.syntaxhighlighter .variable {
+  color: #aa7700 !important;
+}
+.syntaxhighlighter .value {
+  color: #009900 !important;
+}
+.syntaxhighlighter .functions {
+  color: #ff1493 !important;
+}
+.syntaxhighlighter .constants {
+  color: #0066cc !important;
+}
+.syntaxhighlighter .script {
+  font-weight: bold !important;
+  color: #006699 !important;
+  background-color: none !important;
+}
+.syntaxhighlighter .color1, .syntaxhighlighter .color1 a {
+  color: gray !important;
+}
+.syntaxhighlighter .color2, .syntaxhighlighter .color2 a {
+  color: #ff1493 !important;
+}
+.syntaxhighlighter .color3, .syntaxhighlighter .color3 a {
+  color: red !important;
+}
+
+.syntaxhighlighter .keyword {
+  font-weight: bold !important;
+}<<<END TEXT>>>
+
+--------------------------------------------------------------------------------
+SOUČÁST: css\styles.css
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\css\styles.css
+VELIKOST: 47135 B (46.03 KB)
+TYP:      textový
+--------------------------------------------------------------------------------
+<<<BEGIN TEXT (truncated head+tail)>>>
+.hello-widget .area{width:200px;height:200px;background-color:#abc;display:block;position:relative;cursor:crosshair;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.hello-widget .pointer{position:absolute;left:0px;top:0px;width:10px;height:10px;background-color:blue;cursor:crosshair;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-border-top-right-radius:5px;-webkit-border-bottom-right-radius:5px;-webkit-border-bottom-left-radius:5px;-webkit-border-top-left-radius:5px;-moz-border-radius-topright:5px;-moz-border-radius-bottomright:5px;-moz-border-radius-bottomleft:5px;-moz-border-radius-topleft:5px;border-top-right-radius:5px;border-bottom-right-radius:5px;border-bottom-left-radius:5px;border-top-left-radius:5px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #aaa;background-color:5px;padding:10px}.hello-widget .coords{height:10%;padding-top:45%;text-align:center;width:100%;cursor:crosshair;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.my-paddy{width:100px;height:100px;background-color:orange;position:relative}.my-paddy > .my-paddy-picker{width:10px;height:10px;background-color:blue;position:absolute}.jsoneditor-widget{background-color:white}.fiddles.form .textarea textarea{width:400px;height:200px;font-family:monospace;font-size:12px;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}.fiddles.form .jsoneditor-widget{width:400px}.editable-editor .fieldset fieldset{border:none;padding:0px}.ui-mykkro-fieldset,.ui-mykkro-titled,.ui-mykkro-optional{margin-bottom:5px}.ui-mykkro-fieldset > .ui-widget-header,.ui-mykkro-titled > .ui-widget-header,.ui-mykkro-optional > .ui-widget-header{padding:3px;position:relative;background:#ccc;color:black;border-color:#aaa}.ui-mykkro-fieldset > .ui-widget-content,.ui-mykkro-titled > .ui-widget-content,.ui-mykkro-optional > .ui-widget-content{padding:3px 20px;position:relative;background:#ddd;border-color:#aaa}.ui-mykkro-fieldset legend{display:block;width:100%;margin:0;padding:0;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}.slider input{text-align:center;width:50px}.mykkro-thing{display:block;width:100%;height:100%}.mykkro-html{overflow:hidden;position:relative}.mykkro-html > div{overflow:hidden;position:absolute;width:100%}.mykkro-ajax{width:auto;height:auto}.mykkro-empty{background-color:#aaa;border:1px solid #666;display:-moz-box;-moz-box-orient:horizontal;-moz-box-pack:center;-moz-box-align:center;display:-webkit-box;-webkit-box-orient:horizontal;-webkit-box-pack:center;-webkit-box-align:center;display:box;box-orient:horizontal;box-pack:center;box-align:center;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;font-size:12px;opacity:0.7}.mykkro-editable > .editable-pane{width:385px;height:530px;display:inline-block;padding:10px;border:1px gray solid}.mykkro-editable > .editable-editor{width:392px;height:540px;display:inline-block;vertical-align:top;margin-left:12px;overflow:auto}.mykkro-clickable > div{width:100%;height:100%}.mykkro-clickable > .clickable-pane{position:absolute;background-color:#666;left:0px;top:0px;opacity:0}.mykkro-clickable > .clickable-pane:hover{opacity:0.3}.mykkro-clickable{position:relative}.mykkro-soft-text-editor{width:500px;height:200px}.mykkro-soft-text-editor > .textfield{padding:5px;vertical-align:top;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;display:inline-block;width:80%;height:30%}.mykkro-soft-text-editor > .textfield > textarea{width:100%;height:100%;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;-moz-background-clip:padding;-webkit-background-clip:p
+<<<TRUNCATED: vypsáno 4096+1024 z 47135 bajtů>>>
+aaa;background-color:#eec;padding:10px;padding:4px;text-align:center}.mykkro-page-editor-links > span.number-link.current{border:2px solid #a00}.mykkro-page-editor-links > span.disabled{display:none}.Web_OnlineTools_Logo{float:left;padding:8px}.Web_OnlineTools_Logo h1{border:0px;margin:0px;padding:0px;text-align:center;text-indent:0px;font-size:40x;line-height:46px;font-family:Trebuchet MS;color:#284460;font-weight:bold;text-shadow:0px 0px 9px #000000}.Web_OnlineTools_Logo h2{border:0px;margin:0px;padding:0px;text-align:center;text-indent:24px;font-size:15px;line-height:20px;font-style:italic;font-family:Trebuchet MS;color:#74777a;text-shadow:-1px 1px 17px #000000}.imagesearch-widget{display:inline-block}.imagesearch-widget .imagesearch-preview{width:50px;height:68px;display:inline-block;margin:8px;vertical-align:top;background-color:#ddf}.imagesearch-widget > button{display:inline-block;vertical-align:top;margin-top:8px}.form .pageditor-widget .mykkro-empty:hover{background-color:#bbb;border:2px dotted #666}<<<END TEXT>>>
+
+--------------------------------------------------------------------------------
+SOUČÁST: css\viewer.css
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\css\viewer.css
+VELIKOST: 1315 B (1.28 KB)
+TYP:      textový
+--------------------------------------------------------------------------------
+<<<BEGIN TEXT (truncated head+tail)>>>
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}<<<END TEXT>>>
+
+--------------------------------------------------------------------------------
+SOUČÁST: js\libs-viewer.js
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\js\libs-viewer.js
+VELIKOST: 371464 B (362.76 KB)
+TYP:      textový
+--------------------------------------------------------------------------------
+<<<BEGIN TEXT (truncated head+tail)>>>
+/*! jQuery v2.0.3 | (c) 2005, 2013 jQuery Foundation, Inc. | jquery.org/license
+//@ sourceMappingURL=jquery-2.0.3.min.map
+*/
+(function(e,undefined){var t,n,r=typeof undefined,i=e.location,o=e.document,s=o.documentElement,a=e.jQuery,u=e.$,l={},c=[],p="2.0.3",f=c.concat,h=c.push,d=c.slice,g=c.indexOf,m=l.toString,y=l.hasOwnProperty,v=p.trim,x=function(e,n){return new x.fn.init(e,n,t)},b=/[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/.source,w=/\S+/g,T=/^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]*))$/,C=/^<(\w+)\s*\/?>(?:<\/\1>|)$/,k=/^-ms-/,N=/-([\da-z])/gi,E=function(e,t){return t.toUpperCase()},S=function(){o.removeEventListener("DOMContentLoaded",S,!1),e.removeEventListener("load",S,!1),x.ready()};x.fn=x.prototype={jquery:p,constructor:x,init:function(e,t,n){var r,i;if(!e)return this;if("string"==typeof e){if(r="<"===e.charAt(0)&&">"===e.charAt(e.length-1)&&e.length>=3?[null,e,null]:T.exec(e),!r||!r[1]&&t)return!t||t.jquery?(t||n).find(e):this.constructor(t).find(e);if(r[1]){if(t=t instanceof x?t[0]:t,x.merge(this,x.parseHTML(r[1],t&&t.nodeType?t.ownerDocument||t:o,!0)),C.test(r[1])&&x.isPlainObject(t))for(r in t)x.isFunction(this[r])?this[r](t[r]):this.attr(r,t[r]);return this}return i=o.getElementById(r[2]),i&&i.parentNode&&(this.length=1,this[0]=i),this.context=o,this.selector=e,this}return e.nodeType?(this.context=this[0]=e,this.length=1,this):x.isFunction(e)?n.ready(e):(e.selector!==undefined&&(this.selector=e.selector,this.context=e.context),x.makeArray(e,this))},selector:"",length:0,toArray:function(){return d.call(this)},get:function(e){return null==e?this.toArray():0>e?this[this.length+e]:this[e]},pushStack:function(e){var t=x.merge(this.constructor(),e);return t.prevObject=this,t.context=this.context,t},each:function(e,t){return x.each(this,e,t)},ready:function(e){return x.ready.promise().done(e),this},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(e){var t=this.length,n=+e+(0>e?t:0);return this.pushStack(n>=0&&t>n?[this[n]]:[])},map:function(e){return this.pushStack(x.map(this,function(t,n){return e.call(t,n,t)}))},end:function(){return this.prevObject||this.constructor(null)},push:h,sort:[].sort,splice:[].splice},x.fn.init.prototype=x.fn,x.extend=x.fn.extend=function(){var e,t,n,r,i,o,s=arguments[0]||{},a=1,u=arguments.length,l=!1;for("boolean"==typeof s&&(l=s,s=arguments[1]||{},a=2),"object"==typeof s||x.isFunction(s)||(s={}),u===a&&(s=this,--a);u>a;a++)if(null!=(e=arguments[a]))for(t in e)n=s[t],r=e[t],s!==r&&(l&&r&&(x.isPlainObject(r)||(i=x.isArray(r)))?(i?(i=!1,o=n&&x.isArray(n)?n:[]):o=n&&x.isPlainObject(n)?n:{},s[t]=x.extend(l,o,r)):r!==undefined&&(s[t]=r));return s},x.extend({expando:"jQuery"+(p+Math.random()).replace(/\D/g,""),noConflict:function(t){return e.$===x&&(e.$=u),t&&e.jQuery===x&&(e.jQuery=a),x},isReady:!1,readyWait:1,holdReady:function(e){e?x.readyWait++:x.ready(!0)},ready:function(e){(e===!0?--x.readyWait:x.isReady)||(x.isReady=!0,e!==!0&&--x.readyWait>0||(n.resolveWith(o,[x]),x.fn.trigger&&x(o).trigger("ready").off("ready")))},isFunction:function(e){return"function"===x.type(e)},isArray:Array.isArray,isWindow:function(e){return null!=e&&e===e.window},isNumeric:function(e){return!isNaN(parseFloat(e))&&isFinite(e)},type:function(e){return null==e?e+"":"object"==typeof e||"function"==typeof e?l[m.call(e)]||"object":typeof e},isPlainObject:function(e){if("object"!==x.type(e)||e.nodeType||x.isWindow(e))return!1;try{if(e.constructor&&!y.call(e.constructor.prototype,"isPrototypeOf"))return!1}catch(t){return!1}return!0},isEmptyObject:function(e){var t;for(t in e)return!1;return!0},error:function(e){throw Error(e)},parseHTML:function(e,t,n){if(!e||"string"!=typeof e)return null;"boolean"==typeof t&&(n=t,t=!1),t=t||o;var r=C.exec(e),i=!n&&[];return r?[t.createElement(r[1])]:(r=x.buildFragment([e],t,i),i&&x(i).remove(),x.merge([],r.childNodes))},parseJSON:JSON.parse,parseXML:function(e){var t,n;if(!e||"string"!=typeof e)return null;try{n=new DOMParser,t=n.parseFromString(e,"text/xml")}catch(r){t=undefined}return(!t||t.g
+<<<TRUNCATED: vypsáno 4096+1024 z 371464 bajtů>>>
+egister global helpers ==========================
+
+	//	$helpers({ // Global helper functions
+	//		// TODO add any useful built-in helper functions
+	//	});
+
+	//========================== Register converters ==========================
+
+	$converters({
+		html: function(text) {
+			// HTML encoding helper: Replace < > & and ' and " by corresponding entities.
+			return text != undefined ? String(text).replace(htmlEncodeChars, replacerForHtml) : "";
+		},
+		attr: function(text) {
+			// Attribute encoding helper: Replace < & ' and " by corresponding entities.
+			return text != undefined ? String(text).replace(attrEncodeChars, replacerForHtml) : "";
+		},
+		url: function(text) {
+			// TODO - support chaining {{attr|url:....}} to protect against injection attacks from url parameters containing " or '.
+			// URL encoding helper.
+			return text != undefined ? encodeURI(String(text)) : "";
+		}
+	});
+
+	//========================== Define default delimiters ==========================
+	$viewsDelimiters();
+
+})(this, this.jQuery);<<<END TEXT>>>
+
+--------------------------------------------------------------------------------
+SOUČÁST: js\mykkro-viewer.js
+CESTA:    C:\Users\volny\Documents\bakalarsky_projekt\escrapbook\escrapbook\eScrapBook_-_Entwicklungsgeschichte\js\mykkro-viewer.js
+VELIKOST: 203085 B (198.33 KB)
+TYP:      textový
+--------------------------------------------------------------------------------
+<<<BEGIN TEXT (truncated head+tail)>>>
+// configuration file
+var DEBUG = false;
+
+var Config = {
+};
+var __ = function(arg) {
+    return LocaleStrings[arg] || arg;
+}
+
+/*
+	Base.js, version 1.1
+	Copyright 2006-2007, Dean Edwards
+	License: http://www.opensource.org/licenses/mit-license.php
+*/
+
+var Base = function() {
+	// dummy
+};
+
+Base.extend = function(_instance, _static) { // subclass
+	var extend = Base.prototype.extend;
+	
+	// build the prototype
+	Base._prototyping = true;
+	var proto = new this;
+	extend.call(proto, _instance);
+	delete Base._prototyping;
+	
+	// create the wrapper for the constructor function
+	//var constructor = proto.constructor.valueOf(); //-dean
+	var constructor = proto.constructor;
+	var klass = proto.constructor = function() {
+		if (!Base._prototyping) {
+			if (this._constructing || this.constructor == klass) { // instantiation
+				this._constructing = true;
+				constructor.apply(this, arguments);
+				delete this._constructing;
+			} else if (arguments[0] != null) { // casting
+				return (arguments[0].extend || extend).call(arguments[0], proto);
+			}
+		}
+	};
+	
+	// build the class interface
+	klass.ancestor = this;
+	klass.extend = this.extend;
+	klass.forEach = this.forEach;
+	klass.implement = this.implement;
+	klass.prototype = proto;
+	klass.toString = this.toString;
+	klass.valueOf = function(type) {
+		//return (type == "object") ? klass : constructor; //-dean
+		return (type == "object") ? klass : constructor.valueOf();
+	};
+	extend.call(klass, _static);
+	// class initialisation
+	if (typeof klass.init == "function") klass.init();
+	return klass;
+};
+
+Base.prototype = {	
+	extend: function(source, value) {
+		if (arguments.length > 1) { // extending with a name/value pair
+			var ancestor = this[source];
+			if (ancestor && (typeof value == "function") && // overriding a method?
+				// the valueOf() comparison is to avoid circular references
+				(!ancestor.valueOf || ancestor.valueOf() != value.valueOf()) &&
+				/\bbase\b/.test(value)) {
+				// get the underlying method
+				var method = value.valueOf();
+				// override
+				value = function() {
+					var previous = this.base || Base.prototype.base;
+					this.base = ancestor;
+					var returnValue = method.apply(this, arguments);
+					this.base = previous;
+					return returnValue;
+				};
+				// point to the underlying method
+				value.valueOf = function(type) {
+					return (type == "object") ? value : method;
+				};
+				value.toString = Base.toString;
+			}
+			this[source] = value;
+		} else if (source) { // extending with an object literal
+			var extend = Base.prototype.extend;
+			// if this object has a customised extend method then use it
+			if (!Base._prototyping && typeof this != "function") {
+				extend = this.extend || extend;
+			}
+			var proto = {toSource: null};
+			// do the "toString" and other methods manually
+			var hidden = ["constructor", "toString", "valueOf"];
+			// if we are prototyping then include the constructor
+			var i = Base._prototyping ? 0 : 1;
+			while (key = hidden[i++]) {
+				if (source[key] != proto[key]) {
+					extend.call(this, key, source[key]);
+
+				}
+			}
+			// copy each of the source object's properties to this object
+			for (var key in source) {
+				if (!proto[key]) extend.call(this, key, source[key]);
+			}
+		}
+		return this;
+	},
+
+	base: function() {
+		// call this method from any other method to invoke that method's ancestor
+	}
+};
+
+// initialise
+Base = Base.extend({
+	constructor: function() {
+		this.extend(arguments[0]);
+	}
+}, {
+	ancestor: Object,
+	version: "1.1",
+	
+	forEach: function(object, block, context) {
+		for (var key in object) {
+			if (this.prototype[key] === undefined) {
+				block.call(context, object[key], key, object);
+			}
+		}
+	},
+		
+	implement: function() {
+		for (var i = 0; i < arguments.length; i++) {
+			if (typeof arguments[i] == "function") {
+				// if it's a function, call it
+				arguments[i](this.prototype);
+			} else {
+				// add the interface using the extend method
+				this.prototype.extend(arguments[i]);
+			}
+		}
+		return this;
+	},
+	
+	toString: function() {
+		return String(this.valueOf());
+	}
+});
+
+// requires: jquery
+
+var log = function(what) {
+    $(
+<<<TRUNCATED: vypsáno 4096+1024 z 203085 bajtů>>>
+ePlayer({playerId: playerId, containerId: containerId});
+    var div = $("<div>").html(html);
+    parent.append(div);
+    // ensure that player div is at the root of body
+    $("#"+playerId).appendTo($("body"));
+
+	var myCirclePlayer = new CirclePlayer("#"+playerId, media, {
+		cssSelectorAncestor: "#"+containerId
+	});
+    return div;
+};
+
+var _videoPlayerIndex = 1;
+var makeVideoPlayer = function(parent, media) {
+    var id = _videoPlayerIndex++;
+    var playerId = 'jquery_jplayer_'+id;
+    var containerId = 'jp_container_'+id;
+    var html = $.render.videoPlayer({playerId: playerId, containerId: containerId});
+    var div = $("<div>").html(html).appendTo(parent);
+    $("#"+playerId).jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", media);
+        },
+        swfPath: "/js",
+        supplied: "m4v, ogv",
+        cssSelectorAncestor: "#"+containerId
+    });    
+    return div;
+};
+
+// initialization...
+$(document).ready(function() {
+
+    // widgetizer...
+    widgetize($(".widget"));
+
+});<<<END TEXT>>>
+
