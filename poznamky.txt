@@ -26,3 +26,18 @@ ja nechci jen demo ukazky ktere jsem sam nebytvoril... zatim
 
 
 potreboval bych udelat aplikaci ktera bude delat nasledujici, bude tam nejaka domovska stranka kterou si navrhnu, na te domovske strance pujdou udelat dve veci, bud prehravat album nebo vytvorit album. jakmile se bude album prehravat musi tam byt toto preklikavani stranek i s animaci ale pozor, to album bude definovane pomoci json souboru ktery mam, jde o to ze to album bude muset jit vytvorit v nejakem jednoduchem editoru ktery naprogramujeme, do alba musi jit pridavat zatim jen obrazky. na kazdou stranku si chci zvolit nejake rozlozeni obrazku tedy nejakou sablonu jakmile tu sablonu zvolim tak se sablona vytvori a musi do ni jit vkladat obrazky napriklad z galerie. ta sablona bude tvorena takto, bude tam neco jako, jaky pocet obrazku na teto strance chcete. jakmile uzivatel vybere cislo bude na vyber napriklad 1 2 3 4 tak se mu na te strance automaticky vytvori ta sablona. jakmile album ulozim dostanu se na hlavni stranku, na teto strance musit jit vybrat album, tedy ja to album musim umet nejak vytvorit a pak scrollovat tema albama. mam uz navrhy jak to ma vypadat ve photoshopu tak ti to muzu ukazat. jakmile na to album kliknu zmeni se jeho ikonka. ty ikonky mam vsechny pripravene. tim se album oznaci a jakmile kliknu na play tak se pusti ten rezim ktery jsem ti poslal tedy rezim preklikavani stranek s animaci. vim ze toho je hodne proto to musime nejak rozdelit, rekni mi jak nejlepe takovy projekt pojmout musi to byt logicky v kotlinu a jak na to. casu mame dost
+
+
+
+33d8de toto je barva modrych ikonek
+
+
+odstranil jse page curl z editoru ted zkusim pagecurl pouzivat pouze v player
+
+
+
+
+mam tady svuj projekt a potreboval bych zapojit jednu vec v editoru uz umim vytvorit funkcni album ktere se ulozi do jsonu ale pozor v player view se pouziva pagecurl coz je dost zaludna knihovna takze na to davej pozor aby tam nebyl nejaky problem, co po tobe chci chci aby kdyz dam tlacitko lay u selected alba aby se zobrazily stranky tak jak jsem je nastavil v editoru tedy spravna sablona spravny obrazek a aby to animovalo pomoci toho page curl
+
+
+
